@@ -1,0 +1,125 @@
+/* log.css */
+body {
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a); /* Dégradé noir/gris foncé */
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff; /* Texte blanc */
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.login-box {
+    background-color: #1a1a1a; /* Fond noir */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
+    border: 1px solid #333;
+    width: 350px;
+    text-align: center;
+}
+
+.app-name {
+    font-size: 36px;
+    color: #00ff41; /* Vert néon */
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-shadow: 0 0 20px rgba(0, 255, 65, 0.7);
+}
+
+.app-logo {
+    font-size: 32px;
+    animation: pulse 2s infinite;
+    text-shadow: 0 0 15px rgba(0, 255, 65, 0.8);
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.form-title {
+    font-size: 22px;
+    color: #ddd; /* Texte clair pour le titre du formulaire */
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #ccc; /* Légèrement plus clair pour les labels */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #333; /* Bordure foncée */
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    background-color: #2a2a2a; /* Fond plus foncé pour les champs */
+    color: #ffffff; /* Texte clair dans les champs */
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #00ff41; /* Vert néon sur focus */
+    background-color: #333; /* Légère variation pour le focus */
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.3);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #00ff41; /* Couleur vert néon */
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #00cc33; /* Légère variation sur hover */
+    box-shadow: 0 0 15px rgba(0, 255, 65, 0.5);
+    transform: translateY(-2px);
+}
+
+.signup-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signup-link a {
+    color: #00ff41; /* Lien vert néon */
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.signup-link a:hover {
+    color: #00cc33;
+    text-decoration: underline;
+    text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+}

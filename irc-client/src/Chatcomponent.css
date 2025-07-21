@@ -1,0 +1,127 @@
+/* ChatComponent.css */
+
+/* Container principal de la boîte de chat */
+.chat-box {
+    width: 100%;
+    max-width: 800px; /* Largeur maximale de la boîte */
+    height: 400px; /* Garde la hauteur actuelle */
+    background-color: #1a1a1a; /* Fond noir */
+    border-radius: 15px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6); /* Ombre pour donner un effet de profondeur */
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* Zone des messages */
+.message-area {
+    overflow-y: scroll; /* Permet le défilement des messages si trop longs */
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+/* Messages */
+.message {
+    background-color: #2a2a2a; /* Fond gris foncé pour les messages */
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-width: 80%;
+    word-wrap: break-word;
+    border: 1px solid #333;
+}
+
+/* Messages envoyés par l'utilisateur */
+.message.user {
+    background-color: #00ff41; /* Vert néon pour les messages de l'utilisateur */
+    color: #000;
+    align-self: flex-end; /* Aligne les messages de l'utilisateur à droite */
+    border: 1px solid #00ff41;
+}
+
+/* Messages du système ou autres utilisateurs */
+.message.system {
+    background-color: #1a1a1a; /* Fond noir pour les messages du système */
+    color: #00ff41;
+    align-self: flex-start; /* Aligne les messages système à gauche */
+    border: 1px solid #00ff41;
+    font-style: italic;
+}
+
+/* Structure du message : en-tête (utilisateur + date) et contenu */
+.message-header {
+    display: flex;
+    justify-content: space-between; /* Met la date et l'utilisateur aux extrémités */
+    font-size: 14px;
+    color: #ddd; /* Couleur claire pour les informations de l'en-tête */
+    margin-bottom: 5px;
+}
+
+.username {
+    font-weight: bold;
+    color: #00ff41; /* Vert néon pour le nom de l'utilisateur */
+    text-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
+}
+
+.message-time {
+    font-style: italic; /* Style italique pour la date */
+    color: #bbb; /* Couleur plus claire pour la date */
+}
+
+/* Contenu du message */
+.message-content {
+    font-size: 16px; /* Taille de police plus grande pour le texte */
+}
+
+/* Zone d'entrée du message */
+.input-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-area input {
+    width: 80%; /* Garde la largeur des champs d'entrée à 80% */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    font-size: 16px;
+    outline: none;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    transition: border-color 0.3s ease;
+}
+
+.input-area input:focus {
+    border-color: #00ff41; /* Vert néon lors du focus */
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.3);
+}
+
+.input-area button {
+    background-color: #00ff41; /* Couleur vert néon */
+    color: #000;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+/* Effet au survol du bouton */
+.input-area button:hover {
+    background-color: #00cc33; /* Couleur plus foncée */
+    box-shadow: 0 0 15px rgba(0, 255, 65, 0.5);
+    transform: translateY(-2px);
+}
+
+.input-area button:focus {
+    outline: none;
+}

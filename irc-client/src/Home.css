@@ -1,0 +1,83 @@
+/* Home.css */
+body {
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a); /* Dégradé noir/gris foncé */
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff; /* Texte blanc */
+  }
+  
+  .home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .home-box {
+    background-color: #1a1a1a; /* Fond noir */
+    padding: 40px;
+    border-radius: 15px; /* Coins plus arrondis */
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6); /* Ombre plus marquée */
+    border: 1px solid #333;
+    width: 400px;
+    text-align: center;
+  }
+  
+  .home-title {
+    font-size: 36px;
+    color: #00ff41; /* Vert néon */
+    font-weight: 700; /* Plus audacieux pour le titre */
+    margin-bottom: 10px;
+    text-shadow: 0 0 20px rgba(0, 255, 65, 0.7);
+  }
+  
+  .home-tagline {
+    font-size: 18px;
+    color: #ddd; /* Texte clair */
+    margin-bottom: 30px;
+  }
+  
+  .home-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .home-button {
+    padding: 12px;
+    background-color: #00ff41; /* Vert néon */
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px; /* Coins arrondis pour les boutons */
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .home-button:hover {
+    background-color: #00cc33; /* Variation plus sombre du vert */
+    transform: translateY(-3px); /* Légère élévation au survol */
+    box-shadow: 0 0 15px rgba(0, 255, 65, 0.5);
+  }
+  
+  .home-button-secondary {
+    background-color: #2a2a2a; /* Couleur secondaire (gris foncé) */
+    color: #00ff41; /* Texte en vert néon */
+    border: 1px solid #00ff41; /* Bordure en vert néon */
+    transition: all 0.3s ease;
+  }
+  
+  .home-button-secondary:hover {
+    background-color: #00ff41; /* Fond vert au survol */
+    color: #000; /* Texte noir */
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(0, 255, 65, 0.5);
+  }
+  
